@@ -4,7 +4,7 @@
  * with documented adapter implementations for PostgreSQL and Firestore.
  */
 
-import {
+import type {
   PmiValue,
   StructuredMemory,
   AuditEvent,
@@ -13,7 +13,7 @@ import {
   RegressionScenario,
   MemoryCategory,
   MemoryStatus
-} from '../../types/pmi.js';
+} from '../../types/pmi.ts';
 
 export interface PersistenceAdapter {
   init(): Promise<void>;

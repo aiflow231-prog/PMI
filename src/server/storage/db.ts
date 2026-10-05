@@ -1,6 +1,6 @@
-import { PersistenceAdapter } from './PersistenceAdapter.js';
-import { SqliteAdapter } from './SqliteAdapter.js';
-import { configLoader } from '../config/configLoader.js';
+import type { PersistenceAdapter } from './PersistenceAdapter.ts';
+import { SqliteAdapter } from './SqliteAdapter.ts';
+import { configLoader } from '../config/configLoader.ts';
 
 let adapterInstance: PersistenceAdapter | null = null;
 

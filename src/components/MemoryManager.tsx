@@ -13,7 +13,7 @@ import {
   ShieldCheck,
   RefreshCw
 } from 'lucide-react';
-import { StructuredMemory, MemoryCategory, PrivacySettings } from '../types/pmi.js';
+import { StructuredMemory, MemoryCategory, PrivacySettings } from '../types/pmi.ts';
 
 interface MemoryManagerProps {
   isOpen: boolean;

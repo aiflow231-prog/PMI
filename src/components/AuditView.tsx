@@ -14,7 +14,7 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
-import { AuditEvent, CandidateResponse } from '../types/pmi.js';
+import { AuditEvent, CandidateResponse } from '../types/pmi.ts';
 
 interface AuditViewProps {
   auditEvents: AuditEvent[];

@@ -3,7 +3,7 @@
  * Detects dynamic tensions between PMI values for a given prompt and context.
  */
 
-import { ValueConflict, PmiValue } from '../../types/pmi.js';
+import type { ValueConflict, PmiValue } from '../../types/pmi.ts';
 
 export class ConflictDetector {
   public static detect(prompt: string, activeValues: PmiValue[]): ValueConflict[] {

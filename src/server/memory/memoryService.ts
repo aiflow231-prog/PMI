@@ -1,11 +1,11 @@
 import { randomUUID } from 'crypto';
-import {
+import type {
   StructuredMemory,
   MemoryCategory,
   MemoryStatus,
   PrivacySettings
-} from '../../types/pmi.js';
-import { getPersistenceAdapter } from '../storage/db.js';
+} from '../../types/pmi.ts';
+import { getPersistenceAdapter } from '../storage/db.ts';
 
 export class MemoryService {
   private memoryEnabled: boolean = true;

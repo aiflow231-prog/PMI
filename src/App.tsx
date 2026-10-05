@@ -4,15 +4,15 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Header, AppMode } from './components/Header.js';
-import { NaturalChat, ChatMessage } from './components/NaturalChat.js';
-import { AuditView } from './components/AuditView.js';
-import { BlindComparisonView } from './components/BlindComparisonView.js';
-import { RegressionView } from './components/RegressionView.js';
-import { MemoryManager } from './components/MemoryManager.js';
-import { GovernanceModal } from './components/GovernanceModal.js';
-import { LiveVoiceModal } from './components/LiveVoiceModal.js';
-import { AuditEvent, BlindComparisonItem } from './types/pmi.js';
+import { Header, AppMode } from './components/Header.tsx';
+import { NaturalChat, ChatMessage } from './components/NaturalChat.tsx';
+import { AuditView } from './components/AuditView.tsx';
+import { BlindComparisonView } from './components/BlindComparisonView.tsx';
+import { RegressionView } from './components/RegressionView.tsx';
+import { MemoryManager } from './components/MemoryManager.tsx';
+import { GovernanceModal } from './components/GovernanceModal.tsx';
+import { LiveVoiceModal } from './components/LiveVoiceModal.tsx';
+import { AuditEvent, BlindComparisonItem } from './types/pmi.ts';
 
 export default function App() {
   const [currentMode, setCurrentMode] = useState<AppMode>('natural');

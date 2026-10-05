@@ -1,10 +1,11 @@
-import { Router, Request, Response } from 'express';
-import { getPersistenceAdapter } from '../storage/db.js';
-import { configLoader } from '../config/configLoader.js';
-import { PmiEngine } from '../engine/pmiEngine.js';
-import { memoryService } from '../memory/memoryService.js';
-import { isGeminiConfigured } from '../gemini/geminiClient.js';
-import { BlindComparisonItem, RegressionScenario } from '../../types/pmi.js';
+import { Router } from 'express';
+import type { Request, Response } from 'express';
+import { getPersistenceAdapter } from '../storage/db.ts';
+import { configLoader } from '../config/configLoader.ts';
+import { PmiEngine } from '../engine/pmiEngine.ts';
+import { memoryService } from '../memory/memoryService.ts';
+import { isGeminiConfigured } from '../gemini/geminiClient.ts';
+import type { BlindComparisonItem, RegressionScenario } from '../../types/pmi.ts';
 
 export const apiRouter = Router();
 

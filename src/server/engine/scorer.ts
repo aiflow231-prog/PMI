@@ -3,8 +3,8 @@
  * Scores candidates using PMI weights, flexibility tolerances, and confidence factors.
  */
 
-import { PmiValue, CandidateResponse } from '../../types/pmi.js';
-import { HardConstraintsGate } from './hardConstraints.js';
+import type { PmiValue, CandidateResponse } from '../../types/pmi.ts';
+import { HardConstraintsGate } from './hardConstraints.ts';
 
 export interface ScoringWeights {
   [valueId: string]: PmiValue;

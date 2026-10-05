@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import {
+import type {
   PmiSystemConfig,
   PmiValue,
   HardConstraint,
   HistoricalLesson,
   RegressionScenario
-} from '../../types/pmi.js';
+} from '../../types/pmi.ts';
 
 export interface PmiConfigBundle {
   system: PmiSystemConfig;

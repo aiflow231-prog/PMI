@@ -11,7 +11,7 @@ import {
   CheckCircle2,
   AlertTriangle
 } from 'lucide-react';
-import { AuditEvent } from '../types/pmi.js';
+import { AuditEvent } from '../types/pmi.ts';
 
 export interface ChatMessage {
   id: string;

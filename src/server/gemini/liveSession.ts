@@ -1,7 +1,8 @@
 import { WebSocket } from 'ws';
-import { GoogleGenAI, LiveServerMessage, Modality } from '@google/genai';
-import { getGeminiClient } from './geminiClient.js';
-import { PmiEngine } from '../engine/pmiEngine.js';
+import { GoogleGenAI, Modality } from '@google/genai';
+import type { LiveServerMessage } from '@google/genai';
+import { getGeminiClient } from './geminiClient.ts';
+import { PmiEngine } from '../engine/pmiEngine.ts';
 
 export interface LiveClientMessage {
   type?: 'audio' | 'text' | 'ping';

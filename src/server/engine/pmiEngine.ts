@@ -1,19 +1,19 @@
 import { randomUUID } from 'crypto';
-import {
+import type {
   AuditEvent,
   CandidateResponse,
   PmiValue,
   HardConstraint,
   ProvisionalUpdate
-} from '../../types/pmi.js';
-import { getPersistenceAdapter } from '../storage/db.js';
-import { configLoader } from '../config/configLoader.js';
-import { memoryService } from '../memory/memoryService.js';
-import { ConflictDetector } from './conflictDetector.js';
-import { HardConstraintsGate } from './hardConstraints.js';
-import { CandidateScorer } from './scorer.js';
-import { SacrificeLedger } from './sacrificeLedger.js';
-import { GeminiOrchestrator } from '../gemini/orchestrator.js';
+} from '../../types/pmi.ts';
+import { getPersistenceAdapter } from '../storage/db.ts';
+import { configLoader } from '../config/configLoader.ts';
+import { memoryService } from '../memory/memoryService.ts';
+import { ConflictDetector } from './conflictDetector.ts';
+import { HardConstraintsGate } from './hardConstraints.ts';
+import { CandidateScorer } from './scorer.ts';
+import { SacrificeLedger } from './sacrificeLedger.ts';
+import { GeminiOrchestrator } from '../gemini/orchestrator.ts';
 
 export class PmiEngine {
   public static async executeTurn(options: {

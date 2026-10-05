@@ -3,7 +3,7 @@
  * Computes which values were traded off or compromised in the chosen response.
  */
 
-import { PmiValue, CandidateResponse, SacrificeItem } from '../../types/pmi.js';
+import type { PmiValue, CandidateResponse, SacrificeItem } from '../../types/pmi.ts';
 
 export class SacrificeLedger {
   public static calculate(

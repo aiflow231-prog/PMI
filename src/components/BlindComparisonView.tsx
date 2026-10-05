@@ -10,7 +10,7 @@ import {
   ThumbsUp,
   Award
 } from 'lucide-react';
-import { BlindComparisonItem } from '../types/pmi.js';
+import { BlindComparisonItem } from '../types/pmi.ts';
 
 interface BlindComparisonViewProps {
   onGenerate: (prompt: string) => Promise<BlindComparisonItem>;

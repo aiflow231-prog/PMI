@@ -9,7 +9,7 @@ import {
   ShieldCheck,
   ArrowRight
 } from 'lucide-react';
-import { ProvisionalUpdate, PmiValue } from '../types/pmi.js';
+import { ProvisionalUpdate, PmiValue } from '../types/pmi.ts';
 
 interface GovernanceModalProps {
   isOpen: boolean;

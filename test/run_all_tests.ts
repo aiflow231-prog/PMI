@@ -1,13 +1,13 @@
 import assert from 'assert';
 import path from 'path';
 import fs from 'fs';
-import { ConfigLoader } from '../src/server/config/configLoader.js';
-import { SqliteAdapter } from '../src/server/storage/SqliteAdapter.js';
-import { HardConstraintsGate } from '../src/server/engine/hardConstraints.js';
-import { ConflictDetector } from '../src/server/engine/conflictDetector.js';
-import { CandidateScorer } from '../src/server/engine/scorer.js';
-import { SacrificeLedger } from '../src/server/engine/sacrificeLedger.js';
-import { PmiEngine } from '../src/server/engine/pmiEngine.js';
+import { ConfigLoader } from '../src/server/config/configLoader.ts';
+import { SqliteAdapter } from '../src/server/storage/SqliteAdapter.ts';
+import { HardConstraintsGate } from '../src/server/engine/hardConstraints.ts';
+import { ConflictDetector } from '../src/server/engine/conflictDetector.ts';
+import { CandidateScorer } from '../src/server/engine/scorer.ts';
+import { SacrificeLedger } from '../src/server/engine/sacrificeLedger.ts';
+import { PmiEngine } from '../src/server/engine/pmiEngine.ts';
 
 let passedTests = 0;
 let totalTests = 0;

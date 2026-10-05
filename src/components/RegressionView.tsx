@@ -12,7 +12,7 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
-import { RegressionScenario } from '../types/pmi.js';
+import { RegressionScenario } from '../types/pmi.ts';
 
 export const RegressionView: React.FC = () => {
   const [scenarios, setScenarios] = useState<RegressionScenario[]>([]);

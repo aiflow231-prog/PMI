@@ -10,8 +10,8 @@
  * - JSONB columns allow high-performance indexed queries on audit breakdowns.
  */
 
-import { PersistenceAdapter } from './PersistenceAdapter.js';
-import {
+import type { PersistenceAdapter } from './PersistenceAdapter.ts';
+import type {
   PmiValue,
   StructuredMemory,
   AuditEvent,
@@ -20,7 +20,7 @@ import {
   RegressionScenario,
   MemoryCategory,
   MemoryStatus
-} from '../../types/pmi.js';
+} from '../../types/pmi.ts';
 
 export interface PostgresConfig {
   connectionString?: string;

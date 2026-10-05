@@ -1,10 +1,11 @@
 import fs from 'fs';
 import path from 'path';
-import initSqlJs, { Database, SqlJsStatic } from 'sql.js';
-import {
+import initSqlJs from 'sql.js';
+import type { Database, SqlJsStatic } from 'sql.js';
+import type {
   PersistenceAdapter
-} from './PersistenceAdapter.js';
-import {
+} from './PersistenceAdapter.ts';
+import type {
   PmiValue,
   StructuredMemory,
   AuditEvent,
@@ -13,7 +14,7 @@ import {
   RegressionScenario,
   MemoryCategory,
   MemoryStatus
-} from '../../types/pmi.js';
+} from '../../types/pmi.ts';
 
 export class SqliteAdapter implements PersistenceAdapter {
   private db: Database | null = null;

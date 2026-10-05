@@ -1,11 +1,11 @@
 import { GoogleGenAI, Type } from '@google/genai';
-import { getGeminiClient } from './geminiClient.js';
-import {
+import { getGeminiClient } from './geminiClient.ts';
+import type {
   PmiValue,
   HardConstraint,
   CandidateResponse,
   MemoryCategory
-} from '../../types/pmi.js';
+} from '../../types/pmi.ts';
 
 export interface OrchestrationResult {
   detectedIntent: string;

@@ -3,9 +3,9 @@ import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
 import { WebSocketServer } from 'ws';
-import { apiRouter } from './src/server/routes/apiRouter.js';
-import { getPersistenceAdapter } from './src/server/storage/db.js';
-import { LiveSessionManager } from './src/server/gemini/liveSession.js';
+import { apiRouter } from './src/server/routes/apiRouter.ts';
+import { getPersistenceAdapter } from './src/server/storage/db.ts';
+import { LiveSessionManager } from './src/server/gemini/liveSession.ts';
 
 dotenv.config();
 
