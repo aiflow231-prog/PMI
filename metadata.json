@@ -1,0 +1,6 @@
+{
+  "name": "Personal Meaning Index (PMI) - Joseph Fadi Azzi",
+  "description": "Production-grade Personal Meaning Index (PMI) system with Natural, Audit, Blind Comparison, and Regression modes, structured memory, hard constraints, and Gemini Live/Text orchestration.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

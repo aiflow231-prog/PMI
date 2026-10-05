@@ -1,0 +1,10 @@
+{
+  "system": "Personal Meaning Index (PMI)",
+  "owner": "Joseph Fadi Azzi",
+  "version": "1.0.0",
+  "status": "experimental",
+  "objective": "Personal congruence without deception, manipulation, or dependency optimization",
+  "consciousness_claim": false,
+  "default_mode": "natural",
+  "audit_mode_available": true
+}
